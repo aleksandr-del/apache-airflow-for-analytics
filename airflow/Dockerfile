@@ -16,6 +16,7 @@ RUN pip install apache-airflow[postgres]==${AIRFLOW_VERSION}
 RUN pip install airflow-code-editor
 RUN pip install black fs-s3fs fs-gcsfs
 
+
 WORKDIR $AIRFLOW_HOME
 
 COPY ./scripts ./scripts
